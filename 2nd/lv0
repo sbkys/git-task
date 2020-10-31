@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+type person struct {
+	name    string
+	height  int
+	weight  int
+	habit   string
+}
+func main(){
+	p := person {
+		name:   "王思杰",
+		height:  175,
+		weight:  75,
+		habit:   "打游戏",
+	}
+
+    fmt.Println(p)
+
+}

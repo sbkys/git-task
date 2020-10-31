@@ -1,0 +1,30 @@
+package main
+
+import (
+	"fmt"
+)
+
+
+
+func receiver(v interface{}){
+	switch v.(type){
+	case string:
+		fmt.Println("这是个string")
+	case int:
+		fmt.Println("这是个int")
+	case bool:
+		fmt.Println("这是个bool")
+	}
+	return
+}
+
+func main(){
+    s:="你好吗"
+    i:=32
+    b:=true
+	receiver(s)
+	receiver(i)
+	receiver(b)
+
+
+}
